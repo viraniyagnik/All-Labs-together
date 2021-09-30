@@ -124,8 +124,8 @@ namespace Lab1_Geometry2D.Particles
 		/// <summary>
 		/// Gives the particle a random direction vector
 		/// </summary>
-		/// <param name="r1">A random number in the interval [0,1]</param>
-		/// <param name="r2">A random number in the interval [0,1]</param>
+		/// <param name="r1">A random number  in the interval [0,1]</param>
+		
 		public void SetRandomDirection(double r1, double r2)
 		{
 			double dx = 2 * r1 - 1;
