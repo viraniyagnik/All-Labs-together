@@ -1,10 +1,52 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Lab1_Geometry2D.Geomatry2D;
-using System;
+using Lab1_Geometry2D.Geometry2D;
+
+
 
 namespace Geomatery2DUnitTest
 {
+	using Lab1_Geometry2D.Particles;
 	
+	using System;
+	[TestClass]
+	public class ParticleTest
+	{
+		[TestMethod]
+		public void TestDrift()
+		{
+			// to test Phonom
+			Phonon p = new Phonon(1);
+
+			// To set position of x and y
+			p.SetCoords(2,3);
+			//test posion of x and y 
+			Assert.AreEqual(2,p.Position.X);
+			Assert.AreEqual(3,p.Position.Y);
+
+			// To set direction of DX and DY
+			p.SetDirection(3, 4);
+			// To test direction of DX and DY
+			Assert.AreEqual(3, p.Direction.DX);
+			Assert.AreEqual(4, p.Direction.DY);
+			
+			//To set speed and test it
+			p.SetSpeed(100);
+			Assert.AreEqual(100, p.Speed);
+
+			//To set drift time 5
+			p.Drift(5);
+			// position.X += (direction.DX * Speed * time) = 2+3*100*5 = 1502
+			//position.Y += (direction.DY * Speed * time)  = 3+4*100*5 = 2003
+			Assert.AreEqual(1502,p.Position.X);
+			Assert.AreEqual(2003, p.Position.Y);
+
+
+
+		}
+	}
+
+
+
 	[TestClass]
 	public class PointTests
 	{

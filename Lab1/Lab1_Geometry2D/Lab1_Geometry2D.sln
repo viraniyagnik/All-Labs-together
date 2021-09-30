@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1_Geometry2D", "Lab1_Geometry2D.csproj", "{4C9F9CEC-D335-4E8C-BA27-A721F10482F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1_Geometry2D", "Lab1_Geometry2D.csproj", "{4C9F9CEC-D335-4E8C-BA27-A721F10482F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geomatery2DUnitTest", "..\Geomatery2DUnitTest\Geomatery2DUnitTest.csproj", "{0CAAD578-5D2D-4F44-88F0-756BB73ACA2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geomatery2DUnitTest", "..\Geomatery2DUnitTest\Geomatery2DUnitTest.csproj", "{0CAAD578-5D2D-4F44-88F0-756BB73ACA2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
